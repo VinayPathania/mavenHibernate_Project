@@ -1,0 +1,33 @@
+Q1-> Explain Layered Architecture in Business application?
+Ans-> The layered architecture style is one of the most common architectural styles.
+        The idea behind Layered Architecture is that modules or components with similar
+        functionalities are organized into horizontal layers. As a result, each layer performs
+        a specific role within the application.
+
+Q2.  limitation of JDBC based persistence logic over JPA?
+Ans. JDBC allows us to write SQL commands to read data from and update data to a relational database.
+        JPA, unlike JDBC, allows developers to construct database-driven Java programs utilizing object-oriented semantics.
+        The JPA annotations describe how a given Java class and its variables map to a given table and its columns in a database.
+
+Q3. Differentiate between Hibernate and JPA?
+Ans. As we know that JPA is just a specification, meaning there is no implementation.
+        You can annotate your classes as much as you would like with JPA annotations, however,
+        without an implementation, nothing will happen. Think of JPA as the guidelines that must
+        be followed or an interface, while Hibernates JPA implementation is code that meets the API
+        as defined by the JPA specification and provides the under the hood functionality.
+
+Q4  Why to use ORM and What are the benefits of ORM?
+Ans. The key feature of ORM is the mapping it uses to bind an object to its data in the database.
+        Mapping expresses how an object and its properties and behaviors are related to one or more
+        tables and their fields in the database. An ORM uses this mapping information to manage the process
+        of converting data between its database and object forms, and generating the SQL for a relational
+        database to insert, update, and delete data in response to changes the application makes to data objects.
+
+Q5  What is Core Components of Hibernate explain?
+Ans. The Key components of Hibernate are:
+     Session: It is used to get a physical network with a database.
+     Transaction: It represents the unit of work with a database.
+     Query: It uses SQL and HQL string to retrieve the data from the database and create objects.
+     Criteria: It is used to create and execute object-oriented queries and retrieve the objects.
+     Configuration: It represents the properties of files required by Hibernate
+     Session Factory: It configures hibernate for the application using the provided configuration file and instantiates the session object.
