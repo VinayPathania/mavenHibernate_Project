@@ -1,0 +1,21 @@
+Q1 What are the advantages of using Hibernate over JDBC?
+Ans- 1.Database Dependency
+        The Hibernate is not dependent on the database whereas in the case of JDBC the queries that need
+        to be written are dependent on the database.
+        So if we are using some database like MySQL or Postgres SQL in beginning but in the later stage,
+        we have the liability of switching to another database like oracle.
+
+     2.Optimized Code
+        Hibernate creates shorter and optimized code. For example, by creating the connection while
+        using Hibernate the developer should not need to write the complex queries because HCL is there
+        to ease the written query whereas in JDBC it is the complete responsibility of the developer to program
+        the queries.
+
+     3.Caching
+        Hibernate comes up with the caching mechanism. When a query is running multiple times then it
+        can store the value instead of checking it repeatedly from the database. It is responsible to
+        increase the performance of your system whereas in the case of JDBC there isn’t any caching mechanism available.
+
+     4.Associations
+        Associate mapping can be done while using Hibernate. We can use associations like one to one and one
+        to many through annotations. This helps to manage the entity in an easier way.

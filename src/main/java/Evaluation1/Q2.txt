@@ -1,0 +1,22 @@
+Q1 Explain difference between JPA and Hibernate?
+Ans- JPA
+        1.Java Persistence API (JPA) defines the management of relational data in the Java applications.
+        2.It is just a specification. Various ORM tools implement it for data persistence.
+        3.It is defined in javax. Persistence package.
+        4.The EntityManagerFactory interface is used to interact with the entity manager factory for the
+            persistence unit. Thus, it provides an entity manager.
+        5.It uses EntityManager interface to create, read, and delete operations for instances of mapped
+            entity classes. This interface interacts with the persistence context.
+        6.It uses Java Persistence Query Language (JPQL) as an object-oriented query language to perform
+            database operations.
+
+    Hibernate
+        1.Hibernate is an Object-Relational Mapping (ORM) tool which is used to save the state of Java object
+            into the database.
+        2.It is one of the most frequently used JPA implementation.
+        3.It is defined in org. Hibernate package.
+        4.It uses SessionFactory interface to create Session instances.
+        5.It uses Session interface to create, read, and delete operations for instances of mapped entity classes.
+            It behaves as a runtime interface between a Java application and Hibernate.
+        6.It uses Hibernate Query Language (HQL) as an object-oriented query language to perform database operations.
+
