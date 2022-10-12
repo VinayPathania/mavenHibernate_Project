@@ -1,27 +1,31 @@
 package day3;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 public class empDaoImpl implements empDao {
-    public static void main(String[] args) {
+    EntityManagerFactory emf = Persistence.createEntityManagerFactory("MavenUnit");
+    EntityManager em = emf.createEntityManager();
+
+    @Override
+    public void save(Object emp) throws EmployeeException{
 
     }
 
     @Override
-    public void save(Object emp) {
-
-    }
-
-    @Override
-    public String getAddressOfEmployee(int empId) {
+    public String getEmployee(int empId) throws EmployeeException{
         return null;
     }
 
     @Override
-    public String giveBonusToEmployee(int empId, int bonus) {
+    public String deleteEmployee(int empId, int bonus) throws EmployeeException{
         return null;
     }
 
     @Override
-    public boolean deleteEmployee(int empId) {
+    public boolean updateEmployee(int empId) throws EmployeeException{
         return false;
     }
+
 }

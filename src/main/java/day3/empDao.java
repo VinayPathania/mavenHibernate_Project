@@ -1,9 +1,9 @@
 package day3;
 
 public interface empDao {
-    void save(Object emp);
-    public String getAddressOfEmployee(int empId);
-    public String giveBonusToEmployee(int empId, int bonus);
-    public boolean deleteEmployee(int empId);
+    void save(Object emp) throws EmployeeException;
+    public String getEmployee(int empId) throws EmployeeException;
+    public String deleteEmployee(int empId, int bonus) throws EmployeeException;
+    public boolean updateEmployee(int empId) throws EmployeeException;
 
 }
