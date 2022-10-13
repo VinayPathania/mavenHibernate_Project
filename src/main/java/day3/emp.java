@@ -5,12 +5,19 @@ import javax.persistence.*;
 @Entity
 public class emp {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int empId;
     private String name;
     private String address;
     private int salary;
 
     public emp() {
+    }
+
+    public emp(String name, String address, int salary) {
+        this.name = name;
+        this.address = address;
+        this.salary = salary;
     }
 
     public emp(int empId, String name, String address, int salary) {
