@@ -1,0 +1,12 @@
+Q. What is Spring Bean?
+Ans - The objects that form the backbone of your application and that are managed by the Spring IoC container are
+        called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC
+        container. These beans are created with the configuration metadata that you supply to the container.
+        For example, in the form of XML <bean/> definitions which you have already seen in the previous chapters.
+
+      Bean definition contains the information called configuration metadata, which is needed for the container to
+      know the following −
+
+      How to create a bean.
+      Bean's lifecycle details.
+      Bean's dependencies.

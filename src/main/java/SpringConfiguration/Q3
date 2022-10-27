@@ -1,0 +1,27 @@
+Q.
+Ans- The IoC container is responsible to instantiate, configure and assemble the objects. The IoC
+        container gets information's from the XML file and works accordingly. The main tasks
+        performed by IoC container are:
+
+     to instantiate the application class.
+     to configure the object.
+     to assemble the dependencies between the objects.
+
+     There are two types of IoC containers. They are:
+
+     BeanFactory
+     ApplicationContext
+
+     Difference between BeanFactory and the ApplicationContext
+         The org.springframework.beans.factory.BeanFactory and the org.springframework.context.
+         ApplicationContext interfaces acts as the IoC container. The ApplicationContext interface is built on
+         top of the BeanFactory interface. It adds some extra functionality than BeanFactory such as simple
+         integration with Spring's AOP, message resource handling (for I18N), event propagation, application
+         layer specific context (e.g. WebApplicationContext) for web application. So it is better to use
+         ApplicationContext than BeanFactory.
+
+
+     Dependency Injection
+        Dependency Injection (DI) is a design pattern that removes the dependency from the programming
+        code so that it can be easy to manage and test the application. Dependency Injection makes our
+        programming code loosely coupled. To understand the DI better.
